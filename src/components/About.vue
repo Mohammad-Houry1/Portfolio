@@ -61,6 +61,7 @@
 </template>
 <script>
 import { ref } from 'vue'
+import { scrollTo } from 'vue-scrollto'
 
 export default {
   methods: {
@@ -79,53 +80,53 @@ export default {
       },
       {
         id: 2,
-        time: 1200,
+        time: 1500,
         name: 'CSS'
       },
       {
         id: 3,
-        time: 1400,
+        time: 2000,
         name: 'Tailwind'
       },
       {
         id: 4,
-        time: 1600,
+        time: 2500,
         name: 'Responsive Design'
       },
       {
         id: 5,
-        time: 1800,
+        time: 3000,
         name: 'JavaScript'
       },
       {
         id: 6,
-        time: 2000,
+        time: 3500,
         name: 'jQuery'
       },
       {
         id: 7,
-        time: 2200,
+        time: 4000,
         name: 'Vue 3'
       },
       {
         id: 8,
-        time: 2400,
+        time: 4500,
         name: 'PHP'
       },
 
       {
         id: 9,
-        time: 2600,
+        time: 5000,
         name: 'Laravel'
       },
       {
         id: 9,
-        time: 2800,
+        time: 5500,
         name: 'SQL Basic'
       },
       {
         id: 10,
-        time: 3000,
+        time: 6000,
         name: 'GitHub'
       }
     ])

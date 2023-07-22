@@ -27,7 +27,7 @@
         </button>
         <a
           target="_blank"
-          href="https://www.canva.com/design/DAFXFvCDOvA/WExr83Iam5KVlu9vAcFlcA/edit?utm_content=DAFXFvCDOvA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          href="https://www.canva.com/design/DAFXFvCDOvA/_URLq8k9JJtgxD8heHCSwA/view?utm_content=DAFXFvCDOvA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
           class="py-2 px-4 rounded font-medium cursor0"
           id="lisa"
         >
@@ -45,46 +45,46 @@
         <i class="fa fa-bars menu-icon fa-xl"></i>
       </button>
       <div
-        class="fixed top-0 right-[-100%] w-full bg-white h-screen text-center z-[999] dark:bg-black lg:hidden"
+        class="fixed top-0 right-[-100%] w-full bg-blek h-screen text-center z-[999] dark:bg-black lg:hidden"
         id="container"
       >
         <div
-          class="text-2xl float-right m-5 text-black rotate-45 cursor-pointer text-6xl"
+          class="text-2xl float-right m-5 text-white rotate-45 cursor-pointer text-6xl"
           @click="closeMenu()"
         >
           +
         </div>
         <ul
-          class="absolute top-1/2 left-2/4 transform -translate-x-2/4 -translate-y-2/4 list-none opacity-0 text-center text-black"
+          class="absolute top-1/2 left-2/4 transform -translate-x-2/4 -translate-y-2/4 list-none opacity-0 text-center text-white"
           id="menu"
         >
           <li
-            class="my-4 hover:text-white transition duration-500 hover:scale-125 hover:bg-black p-4 text-3xl"
+            class="my-4 hover:text-black transition duration-500 hover:scale-125 hover:bg-white p-4 text-3xl"
           >
             <button @click.prevent="scrollToSection('#Home'), closeMenu()" to="/">
               <span>Home</span>
             </button>
           </li>
           <li
-            class="my-4 hover:text-white transition duration-500 hover:scale-125 hover:bg-black p-4 text-3xl"
+            class="my-4 hover:text-black transition duration-500 hover:scale-125 hover:bg-white p-4 text-3xl"
           >
             <button @click.prevent="scrollToSection('#About'), closeMenu()" to="/About">
               <span>About Me</span>
             </button>
           </li>
           <li
-            class="my-4 hover:text-white transition duration-500 hover:scale-125 hover:bg-black p-4 text-3xl"
+            class="my-4 hover:text-black transition duration-500 hover:scale-125 hover:bg-white p-4 text-3xl"
           >
             <button @click.prevent="scrollToSection('#Project'), closeMenu()" to="/Projects">
               <span>Projects</span>
             </button>
           </li>
           <li
-            class="my-4 hover:text-white transition duration-500 hover:scale-125 hover:bg-black p-4 text-3xl"
+            class="my-4 hover:text-black transition duration-500 hover:scale-125 hover:bg-white p-4 text-3xl"
           >
             <a
               target="_blank"
-              href="https://www.canva.com/design/DAFXFvCDOvA/WExr83Iam5KVlu9vAcFlcA/edit?utm_content=DAFXFvCDOvA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              href="https://www.canva.com/design/DAFXFvCDOvA/_URLq8k9JJtgxD8heHCSwA/view?utm_content=DAFXFvCDOvA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               @click="closeMenu()"
               to="/Resume"
             >
