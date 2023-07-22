@@ -15,7 +15,7 @@ import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Projects from './components/Projects.vue'
-import Contact from './components/Contact.vue'
+import Contact from './components/contact.vue'
 
 const components = [
   { name: 'home', componentName: Home },
