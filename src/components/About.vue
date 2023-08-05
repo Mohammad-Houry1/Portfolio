@@ -1,64 +1,64 @@
 <template>
-  <div class="w-full h-screen">
-    <div id="About">
-      <div class="flex flex-col justify-center items-center my-12 gap-4 text-white">
-        <h1 class="uppercase font-bold tracking-wider text-4xl">about me</h1>
-        <hr class="style1" />
+  <div id="About" class="bg-blek">
+    <div class="flex flex-col justify-center items-center mb-12 gap-4 text-white">
+      <h1 class="uppercase font-bold tracking-wider text-4xl">about me</h1>
+      <hr class="style1" />
+      <span
+        class="max-w-xl text-center text-xl leading-loose"
+        data-aos="flip-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+      >
+        Here you can find additional information about me, including my background, professional
+        pursuits, and skills, particularly in programming and technology.
+      </span>
+    </div>
+    <div
+      class="flex flex-col md:flex-row-reverse h-full text-white justify-around max-w-screen-xl mx-auto gap-12 px-4 md:px-16"
+    >
+      <div class="flex flex-col md:max-w-1/2">
+        <h1 class="font-bold text-2xl mb-6">My Skills</h1>
+        <div class="flex flex-wrap">
+          <div
+            v-for="skill in skills"
+            :key="skill.id"
+            class="py-2 px-4 m-2 rounded-xl text-lg text-black bg-w border"
+            data-aos="flip-up"
+            :data-aos-duration="skill.time"
+          >
+            <span>{{ skill.name }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-1/2 max-h-60 p-4 max-w-xl">
+        <h1 class="font-bold text-2xl mb-6">Get To Know Me!</h1>
         <span
-          class="max-w-xl text-center text-xl leading-loose"
-          data-aos="flip-up"
+          class="tracking-wide leading-loose flex flex-col"
+          data-aos="fade-right"
           data-aos-offset="200"
           data-aos-duration="1000"
-          >Here you can find additional information about me, including my background, professional
-          pursuits, and skills, particularly in programming and technology.
+        >
+          I'm Mohammad Houry, a guitar-strumming web developer who thrives on the synergy between
+          code and music. With a love for both disciplines, I'm on an exciting journey to conquer
+          the digital realm while rocking the stage. Through captivating websites and killer guitar
+          riffs, I create an extraordinary fusion that captivates audiences online and offline.
+          Though I'm new to the professional scene, my passion and dedication drive me to create
+          awe-inspiring virtual experiences. With a hunger for learning and a determination to
+          excel, I bring a perfect blend of technical prowess and rock 'n' roll flair. If you're
+          seeking a developer who can deliver a harmonious blend of creativity and expertise, your
+          search ends here.
         </span>
-      </div>
-      <div class="flex h-full text-white justify-around mx-16 gap-12">
-        <div class="max-w-50">
-          <div class="max-h-60 p-4">
-            <h1 class="font-bold text-2xl mb-6">Get To Know Me!</h1>
-            <span
-              class="tracking-wide leading-loose flex flex-col"
-              data-aos="fade-right"
-              data-aos-offset="200"
-              data-aos-duration="1000"
-            >
-              I'm Mohammad Houry, a guitar-strumming web developer who thrives on the synergy
-              between code and music. With a love for both disciplines, I'm on an exciting journey
-              to conquer the digital realm while rocking the stage. Through captivating websites and
-              killer guitar riffs, I create an extraordinary fusion that captivates audiences online
-              and offline. Though I'm new to the professional scene, my passion and dedication drive
-              me to create awe-inspiring virtual experiences. With a hunger for learning and a
-              determination to excel, I bring a perfect blend of technical prowess and rock 'n' roll
-              flair. If you're seeking a developer who can deliver a harmonious blend of creativity
-              and expertise, your search ends here.
-            </span>
-            <button
-              class="cursor0 uppercase py-2 px-4 border bg-w rounded-xl mt-6 font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-              @click.prevent="scrollToSection('#Contact')"
-            >
-              Contact Me
-            </button>
-          </div>
-        </div>
-        <div class="flex flex-col max-w-50">
-          <h1 class="font-bold text-2xl mb-6">My Skills</h1>
-          <div class="flex flex-wrap">
-            <div
-              v-for="skill in skills"
-              :key="skill.id"
-              class="py-2 px-4 m-2 rounded-xl text-lg text-black bg-w border"
-              data-aos="flip-up"
-              :data-aos-duration="skill.time"
-            >
-              <span class="">{{ skill.name }}</span>
-            </div>
-          </div>
-        </div>
+        <button
+          class="cursor-pointer uppercase py-2 px-4 border bg-w rounded-xl mt-6 font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+          @click.prevent="scrollToSection('#Contact')"
+        >
+          Contact Me
+        </button>
       </div>
     </div>
   </div>
 </template>
+
 <script>
 import { ref } from 'vue'
 import { scrollTo } from 'vue-scrollto'

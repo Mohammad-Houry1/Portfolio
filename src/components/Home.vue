@@ -1,16 +1,21 @@
 <template>
-  <div id="Home" class="w-full h-full">
+  <div id="Home" class="w-full h-full py-0">
     <div
       class="h-screen p-8 pt-12 w-full justify-center items-center flex flex-col text-white home"
     >
-      <div class="flex flex-col items-center justify-center uppercase h-full">
-        <span data-aos="zoom-in" class="text-xl antialiased tracking-wide font-semibold"
+      <div class="flex flex-col items-center justify-center uppercase h-full max-sm:text-center">
+        <span
+          data-aos="zoom-in"
+          class="text-xl antialiased tracking-wide font-semibold max-sm:text-lg"
           >Hello, This is
         </span>
-        <h1 id="name" class="tracking-widest font-bold antialiased text-8xl my-2">
+        <h1 id="name" class="tracking-widest font-bold antialiased text-8xl my-2 max-sm:text-5xl">
           Mohammad Houry
         </h1>
-        <div data-aos="zoom-in" class="text-xl antialiased tracking-wide font-semibold">
+        <div
+          data-aos="zoom-in"
+          class="text-xl antialiased tracking-wide font-semibold max-sm:text-lg"
+        >
           <span>I'm a Frontend Web Developer, Computer Scientist</span>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <template>
-  <div id="Contact" class="w-full flex-col flex items-center">
-    <div class="text-white flex flex-col items-center">
+  <div id="Contact" class="w-full flex-col flex items-center bg-blek pt-12">
+    <div class="text-white flex flex-col items-center max-sm:text-center">
       <h1 class="text-6xl font-bold mb-8 uppercase">Contact</h1>
       <span data-aos="flip-up" data-aos-offset="200" data-aos-duration="1000" class="mb-6"
         >Get in touch or shoot me an email directly on
@@ -11,7 +11,7 @@
       data-aos="zoom-up"
       data-aos-offset="200"
       data-aos-duration="1000"
-      class="flex flex-col p-8 w-7/12 items-center txt-w"
+      class="flex flex-col p-8 w-7/12 max-sm:w-full max-sm:px-4 items-center txt-w"
     >
       <form
         action="https://formspree.io/f/mjvdzypp"
