@@ -1,10 +1,10 @@
 <template>
   <div id="About" class="bg-blek">
-    <div class="flex flex-col justify-center items-center mb-12 gap-4 text-white">
+    <div class="flex flex-col justify-center items-center mb-12 gap-4 text-white max-sm:px-4">
       <h1 class="uppercase font-bold tracking-wider text-4xl">about me</h1>
       <hr class="style1" />
       <span
-        class="max-w-xl text-center text-xl leading-loose"
+        class="max-w-xl text-center text-xl leading-loose max-sm:text-center"
         data-aos="flip-up"
         data-aos-offset="200"
         data-aos-duration="1000"
@@ -17,8 +17,8 @@
       class="flex flex-col md:flex-row-reverse h-full text-white justify-around max-w-screen-xl mx-auto gap-12 px-4 md:px-16"
     >
       <div class="flex flex-col md:max-w-1/2">
-        <h1 class="font-bold text-2xl mb-6">My Skills</h1>
-        <div class="flex flex-wrap">
+        <h1 class="font-bold text-2xl mb-6 max-sm:text-center">My Skills</h1>
+        <div class="flex flex-wrap max-sm:justify-center">
           <div
             v-for="skill in skills"
             :key="skill.id"
@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="max-w-1/2 max-h-60 p-4 max-w-xl">
-        <h1 class="font-bold text-2xl mb-6">Get To Know Me!</h1>
+        <h1 class="font-bold text-2xl mb-6 max-sm:text-center">Get To Know Me!</h1>
         <span
           class="tracking-wide leading-loose flex flex-col"
           data-aos="fade-right"

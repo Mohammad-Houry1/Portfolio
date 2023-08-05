@@ -1,5 +1,5 @@
 <template>
-  <div id="Project" class="mt-12 max-sm:pt-64 my-auto">
+  <div id="Project" class="lg:pt-36 max-sm:pt-64 my-auto">
     <div class="flex flex-col items-center text-white overflow-x-hidden">
       <h1 class="uppercase font-bold tracking-wider text-4xl">project</h1>
       <hr class="style1 my-4" />
@@ -84,7 +84,7 @@ export default {
         ImgAlt: 'CryptoVerse - Crypto App',
         Name: 'CryptoVerse - Crypto App',
         Description:
-          'Developed a dynamic and user-friendly crypto app, leveraging Vue.js and Tailwind CSS to deliver real-time market data, seamless trading experiences, and a modern interface supported by various APIs."',
+          'Developed a dynamic and user-friendly crypto app, leveraging Vue.js and Tailwind CSS to deliver real-time market data, seamless trading experiences, and a modern interface supported by various APIs.',
         Link: 'https://cryptoverse12314.netlify.app',
         Link1: 'https://github.com/Mohammad-Houry1/CryptoVerse.git'
       },
